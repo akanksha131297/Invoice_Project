@@ -7,9 +7,9 @@ And A Console Application .net console named Invoice Subscriber that consumes th
 - Create, save, and retrieve invoices
 - Store invoice data in SQLite using EF Core
 - Publish invoice messages to RabbitMQ
--Console application to consume invoice messages named Invoice Subscriber
--Swagger documentation included
--Unit tests.
+- Console application to consume invoice messages named Invoice Subscriber
+- Swagger documentation included
+- Unit tests.
 
 # Tech Stack
 - Backend: ASP.NET Core 
@@ -52,7 +52,7 @@ Password: `password`
 |--------|-------------------------|--------------------------------------|
 | POST   | /auth/login             | Authenticate user and get JWT token  |
 | POST   | /invoices               | Create a new invoice                 |
-|-------------------------------------------------------------------------|
 
 
-# Provided POSTMAN collection to test both the endpoints
+
+# Provided Postman collection to test both the endpoints
