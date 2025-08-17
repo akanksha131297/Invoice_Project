@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "efbce9ad-6240-4c33-858f-1199ff02e239",
+		"name": "InvoiceAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"test\",\r\n  \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44334/api/Auth/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44334",
+					"path": [
+						"api",
+						"Auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invoice",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGVzdCIsImV4cCI6MTc1NTQ0NjQ3MywiaXNzIjoiWW91cklzc3VlciIsImF1ZCI6IllvdXJBdWRpZW5jZSJ9.R--Bqi-Acd9AgG2k2LGyFhMwdr3x_ZA32Qj1gkn6JtM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"description\": \"yearly Office Supplies Purchase\",\r\n  \"dueDate\": \"2025-09-20T00:00:00\",\r\n  \"supplier\": \"Global Office Supplies Ltd.\",\r\n  \"lines\": [\r\n    { \"description\": \"Pens\", \"price\": 1.5, \"quantity\": 100 },\r\n    { \"description\": \"Notebooks\", \"price\": 3.0, \"quantity\": 50 },\r\n    { \"description\": \"Staplers\", \"price\": 12.0, \"quantity\": 10 },\r\n    { \"description\": \"Markers\", \"price\": 2.0, \"quantity\": 40 },\r\n    { \"description\": \"Highlighters\", \"price\": 1.8, \"quantity\": 30 },\r\n    { \"description\": \"Printer Paper\", \"price\": 5.0, \"quantity\": 20 },\r\n    { \"description\": \"Folders\", \"price\": 2.5, \"quantity\": 25 },\r\n    { \"description\": \"Paper Clips\", \"price\": 0.05, \"quantity\": 1000 },\r\n    { \"description\": \"Whiteboard Erasers\", \"price\": 3.5, \"quantity\": 15 },\r\n    { \"description\": \"Tape Rolls\", \"price\": 2.2, \"quantity\": 20 }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44334/api/Invoice",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44334",
+					"path": [
+						"api",
+						"Invoice"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
