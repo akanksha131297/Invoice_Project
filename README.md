@@ -25,7 +25,7 @@ Testing: Swagger,XUnit
 3. Update the `appsettings.json` file with your RabbitMQ connection string and SQLite database path
 4. Run the application using `dotnet run`
 5. Access the API.
-6. Use Swagger at `https://localhost:5001/swagger` to explore the API endpoints
+6. Use Swagger to explore the API endpoints
 7. To run the Invoice Subscriber console application, navigate to the `InvoiceSubscriber` directory and run `dotnet run`
 8. To run the unit tests, navigate to the `InVoiceAPI.tests` directory and run `dotnet run`.
  
