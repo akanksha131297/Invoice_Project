@@ -12,12 +12,12 @@ And A Console Application .net console named Invoice Subscriber that consumes th
 -Unit tests.
 
 # Tech Stack
-Backend: ASP.NET Core 
-Database: SQLite
-ORM: Entity Framework Core
-Messaging: RabbitMQ using https://www.cloudamqp.com/
-Authentication: JWT Bearer tokens
-Testing: Swagger,XUnit
+- Backend: ASP.NET Core 
+- Database: SQLite
+- ORM: Entity Framework Core
+- Messaging: RabbitMQ using https://www.cloudamqp.com/
+- Authentication: JWT Bearer tokens
+- Testing: Swagger,XUnit
 
 # Getting Started
 1. Clone the repository
